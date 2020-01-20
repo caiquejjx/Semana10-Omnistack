@@ -1,7 +1,7 @@
 const axios = require('axios');
 const Dev = require('../models/Dev')
 const parseStringAsArray = require('../models/utils/parseStringAsArray')
-const {findConnections, sendMessage} = require('..websocket/')
+const {findConnections, sendMessage} = require('../websocket')
 module.exports ={
     async index(req, res) {
         const devs = await Dev.find();
